@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSJSNativeKit_Example' do
+  pod 'CSJSNativeKit', :path => '../'
+
+  target 'CSJSNativeKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
