@@ -1,0 +1,16 @@
+PODS:
+  - CSJSNativeKit (0.1.0)
+
+DEPENDENCIES:
+  - CSJSNativeKit (from `../`)
+
+EXTERNAL SOURCES:
+  CSJSNativeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSJSNativeKit: e1adbe171a957323d3f0e70a042b2be0e17cef80
+
+PODFILE CHECKSUM: 65e9d87493844dc521b5f215476ba3788c7642d6
+
+COCOAPODS: 1.5.0.beta.1
