@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0869F38E7F834298BAA67C4F /* Pods_CSJSNativeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D388A7AF480AD1A9E04041 /* Pods_CSJSNativeKit_Example.framework */; };
+		452292D4208236AD00B2A96D /* CSJSNativeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 452292D3208236AD00B2A96D /* CSJSNativeHelper.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -41,7 +42,9 @@
 		24B86EDC4DDA04F9A825D1D6 /* Pods-CSJSNativeKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSJSNativeKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSJSNativeKit_Example/Pods-CSJSNativeKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24BA363941B9223725484E64 /* Pods_CSJSNativeKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSJSNativeKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C571CE41646BBB3133D8B47 /* Pods-CSJSNativeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSJSNativeKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSJSNativeKit_Tests/Pods-CSJSNativeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5807966DA8ED07A35BB7E6E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		452292D2208236AD00B2A96D /* CSJSNativeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSJSNativeHelper.h; sourceTree = "<group>"; };
+		452292D3208236AD00B2A96D /* CSJSNativeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSJSNativeHelper.m; sourceTree = "<group>"; };
+		5807966DA8ED07A35BB7E6E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CSJSNativeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSJSNativeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,9 +67,9 @@
 		6F86D2902F3E542EBB5F48CF /* Pods-CSJSNativeKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSJSNativeKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSJSNativeKit_Example/Pods-CSJSNativeKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99AD3B4AD062A8E4EC77203F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		99AD3B4AD062A8E4EC77203F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A2D388A7AF480AD1A9E04041 /* Pods_CSJSNativeKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSJSNativeKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8AC71678D9650295C6586D5 /* CSJSNativeKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CSJSNativeKit.podspec; path = ../CSJSNativeKit.podspec; sourceTree = "<group>"; };
+		F8AC71678D9650295C6586D5 /* CSJSNativeKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSJSNativeKit.podspec; path = ../CSJSNativeKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CSViewController.h */,
 				6003F5A6195388D20070C39A /* CSViewController.m */,
+				452292D2208236AD00B2A96D /* CSJSNativeHelper.h */,
+				452292D3208236AD00B2A96D /* CSJSNativeHelper.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -358,6 +363,7 @@
 				6003F59E195388D20070C39A /* CSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				452292D4208236AD00B2A96D /* CSJSNativeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
