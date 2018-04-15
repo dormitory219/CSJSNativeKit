@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0869F38E7F834298BAA67C4F /* Pods_CSJSNativeKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D388A7AF480AD1A9E04041 /* Pods_CSJSNativeKit_Example.framework */; };
 		452292D4208236AD00B2A96D /* CSJSNativeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 452292D3208236AD00B2A96D /* CSJSNativeHelper.m */; };
+		452292D72082EECF00B2A96D /* CSWKWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452292D62082EECF00B2A96D /* CSWKWebController.m */; };
+		452292D92082EEDB00B2A96D /* WKJsDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 452292D82082EEDB00B2A96D /* WKJsDemo.html */; };
+		452292DC208305F100B2A96D /* CSUIWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452292DB208305F100B2A96D /* CSUIWebController.m */; };
+		452292DE2083060000B2A96D /* jsDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 452292DD2083060000B2A96D /* jsDemo.html */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -44,6 +48,12 @@
 		3C571CE41646BBB3133D8B47 /* Pods-CSJSNativeKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSJSNativeKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSJSNativeKit_Tests/Pods-CSJSNativeKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		452292D2208236AD00B2A96D /* CSJSNativeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSJSNativeHelper.h; sourceTree = "<group>"; };
 		452292D3208236AD00B2A96D /* CSJSNativeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSJSNativeHelper.m; sourceTree = "<group>"; };
+		452292D52082EECE00B2A96D /* CSWKWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSWKWebController.h; sourceTree = "<group>"; };
+		452292D62082EECF00B2A96D /* CSWKWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSWKWebController.m; sourceTree = "<group>"; };
+		452292D82082EEDB00B2A96D /* WKJsDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKJsDemo.html; sourceTree = "<group>"; };
+		452292DA208305F100B2A96D /* CSUIWebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSUIWebController.h; sourceTree = "<group>"; };
+		452292DB208305F100B2A96D /* CSUIWebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSUIWebController.m; sourceTree = "<group>"; };
+		452292DD2083060000B2A96D /* jsDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jsDemo.html; sourceTree = "<group>"; };
 		5807966DA8ED07A35BB7E6E0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CSJSNativeKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSJSNativeKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +150,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CSViewController.h */,
 				6003F5A6195388D20070C39A /* CSViewController.m */,
+				452292DA208305F100B2A96D /* CSUIWebController.h */,
+				452292DB208305F100B2A96D /* CSUIWebController.m */,
+				452292D52082EECE00B2A96D /* CSWKWebController.h */,
+				452292D62082EECF00B2A96D /* CSWKWebController.m */,
+				452292DD2083060000B2A96D /* jsDemo.html */,
+				452292D82082EEDB00B2A96D /* WKJsDemo.html */,
 				452292D2208236AD00B2A96D /* CSJSNativeHelper.h */,
 				452292D3208236AD00B2A96D /* CSJSNativeHelper.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -281,6 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452292DE2083060000B2A96D /* jsDemo.html in Resources */,
+				452292D92082EEDB00B2A96D /* WKJsDemo.html in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -361,8 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CSAppDelegate.m in Sources */,
+				452292D72082EECF00B2A96D /* CSWKWebController.m in Sources */,
 				6003F5A7195388D20070C39A /* CSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				452292DC208305F100B2A96D /* CSUIWebController.m in Sources */,
 				452292D4208236AD00B2A96D /* CSJSNativeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

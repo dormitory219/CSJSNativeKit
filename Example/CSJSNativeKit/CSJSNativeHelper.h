@@ -11,6 +11,10 @@
 
 @protocol CSJSNativeHelperProtocol <JSExport>
 
+@property (nonatomic, assign) BOOL property1;
+
+@property (nonatomic, copy) NSString *property2;
+
 - (void)test1;
 
 - (void)test2:(JSValue *)handler;
@@ -21,14 +25,28 @@
 
 - (void)test5:(JSValue *)handler;
 
-- (void)test6:(JSValue *)handler;
-
 - (void)get:(JSValue *)arguments;
 
+- (void)callSystemCamera;
+
+- (void)callWithJson:(id)json;
+
+@end
+
+
+@protocol UIViewExport <JSExport>
+
+@property (nonatomic, assign) CGFloat alpha;
 
 @end
 
 
 @interface CSJSNativeHelper : NSObject<CSJSNativeHelperProtocol>
+
+@property (nonatomic,strong) JSContext *context;
+
+@property (nonatomic, assign) BOOL property1;
+
+@property (nonatomic, copy) NSString *property2;
 
 @end

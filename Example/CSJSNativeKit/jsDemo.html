@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>html</title>-->
+<!--</head>-->
+<!--<body>-->
+<!---->
+<!--<button style="text-align: center;width: 200px;height: 40px;margin-left: 100px" onclick="JSObject.callSystemCamera()">调用系统相册</button>-->
+<!--<br>-->
+<!--<br>-->
+<!--<button style="text-align: center;width: 200px;height: 40px;margin-left: 100px" onclick="JSObject.callWithJson({'name':'jack','age':12})">传递json</button>-->
+<!--<script type="text/javascript">-->
+<!---->
+<!--var jsFunc = function() {-->
+<!--    alert(arguments[0]);-->
+<!--}-->
+<!---->
+<!--JSObject = new Object();-->
+<!--JSObject.callWeb = function (parameter) {-->
+<!--    alert (parameter);-->
+<!--};-->
+<!---->
+<!--JSObject.callWithJson = function(str){-->
+<!--    alert('successJson');-->
+<!--   // return 'successJson';-->
+<!--};-->
+<!---->
+<!--</script>-->
+<!---->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport">
+        <body>
+            <script type="text/javascript">
+
+            var CSJSNativeHelper = {};
+            CSJSNativeHelper.callWeb = function(parameter){
+                alert('callWeb:' + parameter);
+            }
+            //CSJSNativeHelper.callWeb('callWeb');
+            
+            function callWeb(parameter){
+                alert (parameter);
+            }
+            
+            </script>
+            
+            <br>
+            <br>
+            <br>
+            <button type="button" onclick = "CSJSNativeHelper.test1();" style="width:100%; height:30px;"/>调用OC代码</button>
+        </body>
+</html>
+
+

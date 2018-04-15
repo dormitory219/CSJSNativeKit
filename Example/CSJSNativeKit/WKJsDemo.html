@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button style="text-align: center;width: 200px;height: 40px;margin-left: 100px" onclick="callSystemCamera()">调用系统相册</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button style="text-align: center;width: 200px;height: 40px;margin-left: 100px" onclick="callWithJson1({json:{'name':'mike','age':30},type:'callWithJson1'})">传递json1</button>
+<button style="text-align: center;width: 200px;height: 40px;margin-left: 100px" onclick="CSJSNativeHelper.callWithJson2({json:{'name':'jack','age':12},type:'callWithJson2'})">传递json2</button>
+<script>
+
+function callWithJson1(json){
+    // CSJSNativeHelper是我们所注入的对象
+    window.webkit.messageHandlers.CSJSNativeHelper.postMessage({body:json});
+    add(1,2);
+}
+
+CSJSNativeHelper = { };
+CSJSNativeHelper.callWithJson2 = function(json){
+    window.webkit.messageHandlers.CSJSNativeHelper.postMessage({body:json});
+};
+CSJSNativeHelper.callWeb = function callWeb(parameter) {
+    alert('callWeb:' + parameter);
+}
+
+function callSystemCamera(json){
+    // CSJSNativeHelper是我们所注入的对象
+    window.webkit.messageHandlers.CSJSNativeHelper.postMessage({body:{type:'callSystemCamera'}});
+}
+
+function jsAlert(parameter){
+    alert(parameter);
+}
+
+function add(a,b){
+    var c = a + b;
+    return c;
+}
+</script>
+
+</body>
+</html>
