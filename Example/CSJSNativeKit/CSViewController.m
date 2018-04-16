@@ -138,6 +138,22 @@
 );";
     [context evaluateScript:js];
     
+    //2.6.1 从2.6.0外部再封装一层
+    js = @"function CSJSHelper(){  \
+      \
+} \
+    \
+    CSJSHelper.getData = function (url,callBack) { \
+       CSJSNativeHelper.get2({url:url,callBack:callBack}); \
+    }; \
+    \
+    CSJSHelper.getData(   \
+     'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json',  \
+      function(response) {log('(test6.1:)' + response)}  \
+    )";
+    [context evaluateScript:js];
+    
+    
     //2.7 Native对象属性:通过 JavaScript 更新 view 的属性
     js = @"var prop = CSJSNativeHelper.property1 ; log('(test7.1:)' + prop)";
     [context evaluateScript:js];

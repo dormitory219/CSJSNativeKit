@@ -66,6 +66,18 @@
         JSValue *handler = arguments[@"handler"];
         [handler callWithArguments:@[string ?: @""]];
     }] resume];
+    
+}
+
+- (void)get2:(JSValue *)arguments
+{
+    NSURL *url = [NSURL URLWithString:[arguments[@"url"] toString]];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        JSValue *handler = arguments[@"callBack"];
+        [handler callWithArguments:@[string ?: @""]];
+    }] resume];
 }
 
 - (void)callSystemCamera

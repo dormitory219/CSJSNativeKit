@@ -27,6 +27,8 @@
 
 - (void)get:(JSValue *)arguments;
 
+- (void)get2:(JSValue *)arguments;
+
 - (void)callSystemCamera;
 
 - (void)callWithJson:(id)json;
